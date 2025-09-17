@@ -6,13 +6,13 @@ import Contact from "./components/Contact";
 
 function App() {
   return (
-    <div className="bg-primary min-h-screen">
+    <div className="min-h-screen bg-gradient-to-b from-slate-950 via-slate-900 to-slate-900">
       <Header />
-      <main className="max-w-5xl mx-auto p-4 space-y-20">
-        <About />
-        <Skills />
-        <Projects />
-        <Contact />
+      <main className="section py-10 sm:py-14 space-y-20">
+        <section className="card" id="about"><About /></section>
+        <section className="card" id="skills"><Skills /></section>
+        <section className="card" id="projects"><Projects /></section>
+        <section className="card" id="contact"><Contact /></section>
       </main>
     </div>
   );
